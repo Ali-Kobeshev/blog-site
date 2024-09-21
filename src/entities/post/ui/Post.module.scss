@@ -1,0 +1,73 @@
+.post {
+   padding: 16px 20px;
+   margin-bottom: 10px;
+
+   background-color: var(--post-bg);
+
+   // Прямые дочерние элементы
+   > * {
+      margin-bottom: 10px !important;
+   }
+}
+
+.topPart {
+   display: flex;
+   justify-content: space-between;
+}
+
+.user {
+   display: flex;
+   //margin-bottom: 10px;
+
+   align-items: center;
+}
+
+.avatar {
+   height: 30px;
+   width: 30px;
+
+   margin-right: 7px;
+}
+
+.userName {
+   font-size: 15px;
+}
+
+.preview {
+   width: 100%;
+   height: auto;
+   max-height: 555px;
+   //margin-bottom: 15px;
+   background-color: rgb(0, 0, 0);
+}
+
+.title {
+   font-size: 1.25rem;
+   font-weight: inherit;
+   line-height: 1.3;
+   font-weight: bold;
+
+   //margin-bottom: 15px;
+}
+
+.content {
+   line-height: 1.5rem;
+   // margin-bottom: 5px;
+
+   max-height: 344px;
+   overflow: hidden;
+}
+
+.bottomBar {
+   display: flex;
+   padding-top: 20px;
+
+   div {
+      display: flex;
+      align-items: center;
+
+      > * {
+         margin-right: 5px;
+      }
+   }
+}

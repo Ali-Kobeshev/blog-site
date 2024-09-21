@@ -1,0 +1,14 @@
+.list {
+   position: absolute;
+   z-index: 1;
+   background-color: var(--gray-white);
+   border: 1px solid aqua;
+   //padding: 10px;
+
+   & > * {
+      display: flex;
+      justify-content: flex-start !important;
+      width: 100% !important;
+      font-weight: bold !important;
+   }
+}

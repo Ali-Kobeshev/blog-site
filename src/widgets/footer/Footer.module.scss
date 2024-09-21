@@ -1,0 +1,33 @@
+@mixin footerStyles($height, $bg-color) {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   height: $height;
+   background-color: $bg-color;
+   color: var(--footer-color);
+}
+
+.footerMenu {
+   @include footerStyles(150px, var(--footer-menu-bg));
+}
+
+.footer {
+   @include footerStyles(48px, var(--footer-bg));
+}
+
+.container {
+   display: flex;
+   width: 1100px;
+   justify-content: center;
+   align-items: center;
+}
+
+.link {
+   color: white;
+}
+
+.icon {
+   font-size: 35px !important;
+   margin-right: 30px !important;
+}

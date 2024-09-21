@@ -1,0 +1,1 @@
+export { MostPopularPosts } from "./MostPopularPosts";

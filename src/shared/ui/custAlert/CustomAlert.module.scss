@@ -1,0 +1,22 @@
+.wrapper {
+   position: fixed;
+   top: 20px;
+   left: 35%;
+   z-index: 1000;
+   color: white;
+
+   min-width: 500px;
+   min-height: 100px;
+}
+
+.content {
+   padding: 20px;
+   position: relative;
+}
+
+.close {
+   position: absolute;
+   right: 0;
+   top: 0;
+   margin-bottom: 10px;
+}

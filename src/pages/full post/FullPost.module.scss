@@ -1,0 +1,20 @@
+.post {
+   padding: 16px 20px;
+   margin-bottom: 10px;
+
+   background-color: var(--post-bg);
+}
+
+.title {
+   font-size: 1.25rem;
+   font-weight: inherit;
+   line-height: 1.3;
+   font-weight: bold;
+
+   margin-bottom: 15px;
+}
+
+.content {
+   line-height: 1.5rem;
+   margin-bottom: 5px;
+}

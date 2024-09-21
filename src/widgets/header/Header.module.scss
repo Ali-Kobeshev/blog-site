@@ -1,0 +1,14 @@
+.header {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   background-color: var(--header-bg);
+   height: 48px;
+}
+
+.headerItems {
+   display: flex;
+
+   width: 1100px;
+}

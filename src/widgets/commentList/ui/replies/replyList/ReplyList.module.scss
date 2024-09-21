@@ -1,0 +1,12 @@
+.replyList {
+   padding-left: 40px;
+   width: 100%;
+
+   > * {
+      margin-bottom: 10px !important; /* Задаёт отступ снизу для всех дочерних элементов */
+
+      &:last-child {
+         margin-bottom: 0; /* Убирает отступ у последнего элемента */
+      }
+   }
+}

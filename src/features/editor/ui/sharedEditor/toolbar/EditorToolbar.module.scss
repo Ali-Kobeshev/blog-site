@@ -1,0 +1,10 @@
+.toolbar {
+   display: flex;
+   flex-wrap: wrap; /* Перенос элементов на новую строку */
+   max-width: 310px;
+}
+
+.toolbar > * {
+   margin-right: 5px; /* Пример отступа между элементами */
+   margin-bottom: 5px;
+}

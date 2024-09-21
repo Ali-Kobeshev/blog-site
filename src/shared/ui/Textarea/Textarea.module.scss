@@ -1,0 +1,37 @@
+@mixin zeroing-styles {
+   font-family: "Roboto", sans-serif;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+
+   appearance: none;
+   border: none;
+   margin: 0;
+   padding: 0;
+   resize: none;
+   //font: inherit;
+   outline: none;
+   overflow: auto;
+   max-height: none;
+}
+
+.textarea {
+   &::-webkit-scrollbar {
+      width: 0px;
+   }
+
+   &::placeholder {
+      color: #aaabab;
+      font-family: "Roboto", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+   }
+
+   @include zeroing-styles;
+
+   background-color: var(--gray-white);
+   color: var(--text-color);
+   width: 100%;
+   // margin-bottom: 5px;
+   // box-sizing: border-box;
+   // border: 1px solid #4cb7eb;
+}

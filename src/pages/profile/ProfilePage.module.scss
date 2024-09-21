@@ -1,0 +1,22 @@
+.nameAndAvatar {
+   display: flex;
+}
+
+.avatar {
+   width: 100px;
+   height: 100px;
+   margin-right: 15px;
+   margin-bottom: 10px;
+}
+
+.boldBigText {
+   font-size: 20px;
+   font-weight: 700;
+   margin-bottom: 10px;
+}
+
+.publications {
+   & > *:last-child {
+      margin-bottom: 10px;
+   }
+}
