@@ -2,8 +2,9 @@ import {
    Navigate,
    Route,
    RouterProvider,
-   createBrowserRouter,
+   //createBrowserRouter,
    createRoutesFromElements,
+   createHashRouter,
 } from "react-router-dom";
 import { Layout } from "../layout";
 import { ErrorPage } from "../errors/ErrorPage";
@@ -13,15 +14,15 @@ import { WritePost } from "../../pages/write post/WritePost";
 import { ProfilePage } from "../../pages/profile/ProfilePage";
 import { AllCategories } from "../../pages/all categoties/AllCategories";
 
-const router = createBrowserRouter(
+const router = createHashRouter(
    createRoutesFromElements(
       <Route path="/" element={<Layout />} errorElement={<ErrorPage />}>
-         <Route path="/" element={<Navigate to="/my feed" />} />
+         <Route path="/" element={<Navigate to="/my-feed" />} />
          <Route path="/posts/:id" element={<FullPost />} />
-         <Route path="/my feed" element={<MyFeed />} />
-         <Route path="/all categories" element={<AllCategories />} />
-         <Route path="/write new post" element={<WritePost />} />
-         <Route path="/profile room" element={<ProfilePage />} />
+         <Route path="/my-feed" element={<MyFeed />} />
+         <Route path="/all-categories" element={<AllCategories />} />
+         <Route path="/write-new-post" element={<WritePost />} />
+         <Route path="/profile-room" element={<ProfilePage />} />
       </Route>
    )
 );

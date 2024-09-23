@@ -19,11 +19,11 @@ export const FeedsNavbar = () => {
                ))}
             </div>
             <div className={cl.actionsList}>
-               <Link className={cl.link} to="/write new post">
+               <Link className={cl.link} to="/write-new-post">
                   <EditIcon />
                </Link>
                <ToggleThemeBtn />
-               <Link className={cl.link} to="/profile room">
+               <Link className={cl.link} to="/profile-room">
                   <AccountCircleIcon />
                </Link>
             </div>
